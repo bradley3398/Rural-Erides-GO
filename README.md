@@ -1,3 +1,5 @@
+<img width="1024" height="1024" alt="logo" src="https://github.com/user-attachments/assets/24f3cf59-e269-4fc8-9c2d-75a12af2d593" />
+<img width="1024" height="1024" alt="logo1" src="https://github.com/user-attachments/assets/740c87f7-1c37-4f4a-9786-ef2d590b226a" />
 <div align="center">
 
 <img src="assets/logo.png" alt="Rural ERides Go Logo" width="110" style="margin-right: 20px;" />
