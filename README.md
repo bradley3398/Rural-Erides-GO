@@ -24,7 +24,7 @@
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;900&amp;family=Inter:wght@400;500;600;700;900&amp;display=swap');
     body { font-family: 'Inter', sans-serif; background-color: #06060a; color: #fff; overflow-x: hidden; }
     .font-mono { font-family: 'JetBrains Mono', monospace; }
-    .glow-brand { box-shadow: 0 0 35px rgba(57, 255, 20, 0.2); }
+    .glow-brand { box-shadow: 0 0 35px rgba(57, 255, 20, 0.25); }
     .glow-text { text-shadow: 0 0 20px rgba(57, 255, 20, 0.4); }
     .glass-panel { background: rgba(13, 14, 21, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(57, 255, 20, 0.15); }
     .grid-bg { background-image: radial-gradient(rgba(57, 255, 20, 0.08) 1px, transparent 1px); background-size: 32px 32px; }
@@ -41,7 +41,10 @@
           <div class="w-full h-full bg-[#39ff14] text-black font-black flex items-center justify-center text-xs" style="display:none;">RE</div>
         </div>
         <div>
-          <span class="text-[10px] font-mono font-black text-[#39ff14] tracking-widest uppercase block">Rural ERides Go</span>
+          <div class="flex items-center gap-2">
+            <span class="text-[10px] font-mono font-black text-[#39ff14] tracking-widest uppercase">Rural ERides Go</span>
+            <span class="px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[9px] font-mono font-black uppercase">Alpha v6.5</span>
+          </div>
           <span class="text-xs font-black uppercase tracking-wider text-zinc-300">Master Telemetry Suite</span>
         </div>
       </div>
@@ -76,8 +79,8 @@
         </p>
 
         <div class="flex flex-wrap gap-4 pt-2">
-          <a href="#features" class="bg-[#39ff14] text-black px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs glow-brand hover:opacity-90 transition-all flex items-center gap-2 font-mono">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg> Explore Architecture
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="bg-[#39ff14] text-black px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs glow-brand hover:opacity-90 transition-all flex items-center gap-2 font-mono">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg> Download Alpha APK
           </a>
           <a href="#bio" class="bg-zinc-900 border border-zinc-800 hover:border-zinc-700 px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-xs text-white transition-all flex items-center gap-2 font-mono">
             <svg class="w-4 h-4 text-[#39ff14]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg> Creator Bio &amp; Fleet
@@ -93,7 +96,7 @@
           <div class="flex justify-between items-center border-b border-zinc-800/80 pb-4">
             <div class="flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-[#39ff14] animate-ping"></span>
-              <span class="text-[10px] font-mono font-black uppercase text-[#39ff14] tracking-widest">Live Telemetry HUD</span>
+              <span class="text-[10px] font-mono font-black uppercase text-[#39ff14] tracking-widest">Alpha HUD Preview</span>
             </div>
             <span class="text-[10px] font-mono text-zinc-500 uppercase">S25 Plus Rig</span>
           </div>
@@ -120,7 +123,7 @@
           </div>
 
           <div class="bg-[#121318] border border-zinc-800 p-3 rounded-2xl flex items-center justify-between text-xs font-mono">
-            <span class="text-zinc-400">GPS Status: <strong class="text-emerald-400">Locked</strong></span>
+            <span class="text-zinc-400">Status: <strong class="text-amber-400">Alpha Testing</strong></span>
             <span class="text-[#39ff14] font-black">Rider Radar Active</span>
           </div>
         </div>
@@ -252,8 +255,8 @@
   <footer class="border-t border-zinc-900 bg-[#0d0e15] py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
       <div class="flex items-center gap-3">
-        <div class="w-3 h-3 rounded-full bg-[#39ff14] animate-ping"></div>
-        <span class="text-xs font-mono font-black uppercase tracking-widest text-zinc-400">Rural ERides Go v6.5.0 • Developed by Lord Bradley Callison</span>
+        <div class="w-3 h-3 rounded-full bg-amber-400 animate-ping"></div>
+        <span class="text-xs font-mono font-black uppercase tracking-widest text-zinc-400">Rural ERides Go v6.5.0-Alpha • Developed by Lord Bradley Callison</span>
       </div>
       <div class="flex items-center gap-6 text-xs font-black uppercase tracking-widest text-zinc-500 font-mono">
         <a href="https://youtube.com/@bradleycallison" target="_blank" rel="noopener noreferrer" class="hover:text-[#39ff14] transition-colors">YouTube Channel</a>
@@ -263,4 +266,4 @@
   </footer>
 
 </body>
-</html>
+</html><img width="1024" height="1024" alt="logo" src="https://github.com/user-attachments/assets/fa154a7a-e243-49ea-bbf4-b1cccd0e600e" />
