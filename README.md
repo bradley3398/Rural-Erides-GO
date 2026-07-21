@@ -24,7 +24,7 @@
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;900&amp;family=Inter:wght@400;500;600;700;900&amp;display=swap');
     body { font-family: 'Inter', sans-serif; background-color: #06060a; color: #fff; overflow-x: hidden; }
     .font-mono { font-family: 'JetBrains Mono', monospace; }
-    .glow-brand { box-shadow: 0 0 35px rgba(57, 255, 20, 0.25); }
+    .glow-brand { box-shadow: 0 0 35px rgba(57, 255, 20, 0.2); }
     .glow-text { text-shadow: 0 0 20px rgba(57, 255, 20, 0.4); }
     .glass-panel { background: rgba(13, 14, 21, 0.85); backdrop-filter: blur(20px); border: 1px solid rgba(57, 255, 20, 0.15); }
     .grid-bg { background-image: radial-gradient(rgba(57, 255, 20, 0.08) 1px, transparent 1px); background-size: 32px 32px; }
@@ -32,13 +32,13 @@
 </head>
 <body class="bg-[#06060a] text-white min-h-screen flex flex-col justify-between grid-bg selection:bg-[#39ff14] selection:text-black">
 
-  <!-- --- HEADER NAVIGATION --- -->
+  <!-- HEADER NAVIGATION -->
   <header class="border-b border-zinc-900/80 bg-[#06060a]/90 backdrop-blur-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <!-- Graphic App Badge SVG -->
-        <div class="w-12 h-12 rounded-2xl bg-[#39ff14]/10 border border-[#39ff14]/40 flex items-center justify-center glow-brand text-[#39ff14]">
-          <svg class="w-6 h-6 animate-pulse" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <div class="w-12 h-12 rounded-2xl bg-[#39ff14]/10 border border-[#39ff14]/40 flex items-center justify-center glow-brand overflow-hidden p-1">
+          <img src="assets/logo.png" alt="Rural ERides Go Logo" class="w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="w-full h-full bg-[#39ff14] text-black font-black flex items-center justify-center text-xs" style="display:none;">RE</div>
         </div>
         <div>
           <span class="text-[10px] font-mono font-black text-[#39ff14] tracking-widest uppercase block">Rural ERides Go</span>
@@ -57,14 +57,14 @@
     </div>
   </header>
 
-  <!-- --- HERO SECTION WITH GRAPHIC TELEMETRY MOCKUP --- -->
+  <!-- HERO SECTION -->
   <section class="relative overflow-hidden py-16 lg:py-24">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#39ff14] opacity-5 rounded-full blur-[180px] pointer-events-none"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
       
       <div class="lg:col-span-7 space-y-8 text-left">
         <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#39ff14]/10 border border-[#39ff14]/30 text-[#39ff14] text-xs font-mono font-black uppercase tracking-widest">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg> Engineered by Lord Bradley Callison
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg> Developed by Lord Bradley Callison
         </div>
 
         <h1 class="text-4xl sm:text-6xl font-black uppercase tracking-tight leading-none">
@@ -72,7 +72,7 @@
         </h1>
 
         <p class="text-zinc-400 text-sm sm:text-base max-w-xl font-medium leading-relaxed">
-          A production-grade React, Vite, and Capacitor application built in Stigler, Oklahoma. Optimized for advanced electric personal vehicle (PEV) telemetry, real-time weather analytics, secure AI mechanical diagnostics, and sub-meter field tracking.
+          A production-grade React, Vite, and Capacitor application built for advanced electric personal vehicle (PEV) telemetry, real-time weather analytics, secure AI mechanical diagnostics, and sub-meter field tracking.
         </p>
 
         <div class="flex flex-wrap gap-4 pt-2">
@@ -85,7 +85,7 @@
         </div>
       </div>
 
-      <!-- Graphic HUD Dashboard Preview Card -->
+      <!-- TELEMETRY HUD PREVIEW CARD -->
       <div class="lg:col-span-5">
         <div class="glass-panel p-6 rounded-3xl relative overflow-hidden shadow-2xl space-y-6 border border-[#39ff14]/30">
           <div class="absolute -right-12 -top-12 w-48 h-48 bg-[#39ff14] opacity-10 rounded-full blur-2xl"></div>
@@ -129,15 +129,15 @@
     </div>
   </section>
 
-  <!-- --- CREATOR BIO & FLEET SHOWCASE --- -->
+  <!-- CREATOR BIO & FLEET SHOWCASE -->
   <section id="bio" class="py-20 bg-zinc-950/60 border-t border-b border-zinc-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="glass-panel p-8 sm:p-12 rounded-3xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
         <div class="lg:col-span-4 flex flex-col items-center text-center space-y-4">
           <div class="w-32 h-32 rounded-3xl bg-zinc-900 border-2 border-[#39ff14]/40 flex items-center justify-center overflow-hidden glow-brand p-3 relative group">
-            <!-- Graphic Channel Avatar SVG -->
-            <svg class="w-16 h-16 text-[#39ff14]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            <img src="assets/logo.png" alt="Channel Logo" class="w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="w-full h-full bg-[#39ff14]/20 text-[#39ff14] font-black flex items-center justify-center text-sm" style="display:none;">@BRADLEY</div>
           </div>
           <div>
             <h3 class="text-lg font-black uppercase tracking-wide">Lord Bradley Callison</h3>
@@ -153,14 +153,14 @@
             <span class="text-xs font-mono font-black text-[#39ff14] uppercase tracking-widest">About The Creator &amp; Fleet</span>
             <h3 class="text-2xl sm:text-3xl font-black uppercase tracking-wider">Field-Tested in Stigler, Oklahoma</h3>
             <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-              Rural ERides Go was forged from real-world micro-mobility testing across Oklahoma terrain. Designed and coded by Lord Bradley Callison, this platform delivers precise telemetry monitoring without relying on clunky, closed-ecosystem apps.
+              Rural ERides Go was forged from real-world micro-mobility testing across Oklahoma terrain. Designed and coded by Lord Bradley Callison, this platform delivers precise telemetry monitoring without relying on closed-ecosystem apps.
             </p>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             <div class="bg-black/60 border border-zinc-900 p-4 rounded-2xl space-y-1">
               <span class="text-[10px] font-mono text-[#39ff14] uppercase tracking-widest font-black">Active Personal Fleet</span>
-              <p class="text-xs font-bold text-zinc-200">Aostirmotor A20 Folding Bike, Geemax E-Trike, isinwheel H7 Pro Scooter, &amp; Dual Engwe Y600s.</p>
+              <p class="text-xs font-bold text-zinc-200">Aostirmotor A20 Folding Bike, Geemax E-Trike, isinwheel H7 Pro Scooter, &amp; Engwe Y600.</p>
             </div>
             <div class="bg-black/60 border border-zinc-900 p-4 rounded-2xl space-y-1">
               <span class="text-[10px] font-mono text-[#39ff14] uppercase tracking-widest font-black">Core Hardware Setup</span>
@@ -173,18 +173,17 @@
     </div>
   </section>
 
-  <!-- --- FEATURE ARCHITECTURE MATRIX --- -->
+  <!-- FEATURE ARCHITECTURE MATRIX -->
   <section id="features" class="py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
       
       <div class="text-center space-y-3">
         <span class="text-xs font-mono font-black text-[#39ff14] uppercase tracking-widest">System Capabilities</span>
-        <h3 className="text-2xl sm:text-4xl font-black uppercase tracking-wider">Advanced Technical Architecture</h3>
+        <h3 class="text-2xl sm:text-4xl font-black uppercase tracking-wider">Advanced Technical Architecture</h3>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Feature 1 -->
         <div class="glass-panel p-8 rounded-3xl transition-all space-y-4 hover:border-[#39ff14]/50 group">
           <div class="w-12 h-12 rounded-2xl bg-[#39ff14]/10 border border-[#39ff14]/30 flex items-center justify-center text-[#39ff14]">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -195,7 +194,6 @@
           </p>
         </div>
 
-        <!-- Feature 2 -->
         <div class="glass-panel p-8 rounded-3xl transition-all space-y-4 hover:border-[#39ff14]/50 group">
           <div class="w-12 h-12 rounded-2xl bg-[#39ff14]/10 border border-[#39ff14]/30 flex items-center justify-center text-[#39ff14]">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
@@ -206,7 +204,6 @@
           </p>
         </div>
 
-        <!-- Feature 3 -->
         <div class="glass-panel p-8 rounded-3xl transition-all space-y-4 hover:border-[#39ff14]/50 group">
           <div class="w-12 h-12 rounded-2xl bg-[#39ff14]/10 border border-[#39ff14]/30 flex items-center justify-center text-[#39ff14]">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/></svg>
@@ -217,7 +214,6 @@
           </p>
         </div>
 
-        <!-- Feature 4 -->
         <div class="glass-panel p-8 rounded-3xl transition-all space-y-4 hover:border-[#39ff14]/50 group">
           <div class="w-12 h-12 rounded-2xl bg-[#39ff14]/10 border border-[#39ff14]/30 flex items-center justify-center text-[#39ff14]">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -228,7 +224,6 @@
           </p>
         </div>
 
-        <!-- Feature 5 -->
         <div class="glass-panel p-8 rounded-3xl transition-all space-y-4 hover:border-[#39ff14]/50 group">
           <div class="w-12 h-12 rounded-2xl bg-[#39ff14]/10 border border-[#39ff14]/30 flex items-center justify-center text-[#39ff14]">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
@@ -239,7 +234,6 @@
           </p>
         </div>
 
-        <!-- Feature 6 -->
         <div class="glass-panel p-8 rounded-3xl transition-all space-y-4 hover:border-[#39ff14]/50 group">
           <div class="w-12 h-12 rounded-2xl bg-[#39ff14]/10 border border-[#39ff14]/30 flex items-center justify-center text-[#39ff14]">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
@@ -254,7 +248,7 @@
     </div>
   </section>
 
-  <!-- --- FOOTER --- -->
+  <!-- FOOTER -->
   <footer class="border-t border-zinc-900 bg-[#0d0e15] py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
       <div class="flex items-center gap-3">
@@ -268,8 +262,5 @@
     </div>
   </footer>
 
-  <script>
-    lucide.createIcons();
-  </script>
 </body>
 </html>
