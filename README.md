@@ -1,3 +1,4 @@
+<img width="1024" height="1024" alt="logo1" src="https://github.com/user-attachments/assets/3634215b-71a6-42fd-83c5-a59474abdd69" />
 <div align="center">
   <!-- 🖼️ DRAG AND DROP YOUR MAIN RURAL ERIDES CHANNEL LOGO DIRECTLY BELOW THIS LINE -->
   <img src="YOUR_LOGO_URL_HERE" alt="Rural ERides Logo" width="250"/>
