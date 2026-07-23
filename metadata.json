@@ -1,0 +1,6 @@
+{
+  "name": "Rural ERides GO",
+  "description": "Premium co-pilot dashboard and AI assistant for rural personal electric vehicle (PEV) adventures, integrated with Rural ERides by Bradley Callison.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

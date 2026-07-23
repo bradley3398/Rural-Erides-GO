@@ -1,0 +1,337 @@
+{
+  "entities": {
+    "ForumPost": {
+      "title": "ForumPost",
+      "description": "A user-submitted post in the community forum.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the post."
+        },
+        "author": {
+          "type": "string",
+          "description": "Screen name of the author."
+        },
+        "message": {
+          "type": "string",
+          "description": "The post body content."
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Formatted date or timestamp of creation."
+        },
+        "pevType": {
+          "type": "string",
+          "description": "Type of personal electric vehicle related to the post."
+        },
+        "likes": {
+          "type": "integer",
+          "description": "Number of likes the post has received."
+        },
+        "category": {
+          "type": "string",
+          "description": "Forum category (e.g., General, Troubleshooting, Route, Classified)."
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "Optional attached image URL."
+        },
+        "isLiked": {
+          "type": "boolean",
+          "description": "Whether the current client liked this post (locally transient)."
+        }
+      },
+      "required": ["id", "author", "message", "category"]
+    },
+    "ForumReply": {
+      "title": "ForumReply",
+      "description": "A response or reply to a specific forum post.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the reply."
+        },
+        "author": {
+          "type": "string",
+          "description": "Screen name of the reply author."
+        },
+        "message": {
+          "type": "string",
+          "description": "The message body of the reply."
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Formatted date or timestamp of creation."
+        }
+      },
+      "required": ["id", "author", "message"]
+    },
+    "Meetup": {
+      "title": "Meetup",
+      "description": "Active group ride meetup coordinates and details.",
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number",
+          "description": "GPS Latitude coordinate."
+        },
+        "lng": {
+          "type": "number",
+          "description": "GPS Longitude coordinate."
+        },
+        "description": {
+          "type": "string",
+          "description": "Trailhead or meeting spot description."
+        },
+        "setBy": {
+          "type": "string",
+          "description": "The name of the rider who scheduled the meetup."
+        },
+        "timestamp": {
+          "type": "integer",
+          "description": "Epoch timestamp in milliseconds."
+        }
+      },
+      "required": ["lat", "lng", "description", "setBy", "timestamp"]
+    },
+    "Ping": {
+      "title": "Ping",
+      "description": "A live geolocated hazard ping or broadcast on the map.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique ping identifier."
+        },
+        "sender": {
+          "type": "string",
+          "description": "Rider who emitted the ping."
+        },
+        "message": {
+          "type": "string",
+          "description": "Dynamic broadcast message description."
+        },
+        "lat": {
+          "type": "number",
+          "description": "GPS Latitude coordinate."
+        },
+        "lng": {
+          "type": "number",
+          "description": "GPS Longitude coordinate."
+        },
+        "timestamp": {
+          "type": "integer",
+          "description": "Epoch timestamp in milliseconds."
+        }
+      },
+      "required": ["id", "sender", "message", "lat", "lng", "timestamp"]
+    },
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile document containing rider credentials and settings.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "Unique identifier matching the user's Auth UID."
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name of the user."
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address of the user."
+        }
+      },
+      "required": ["uid", "name", "email"]
+    },
+    "BoardPost": {
+      "title": "BoardPost",
+      "description": "A high-contrast user-submitted post in the Board feed.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the board post."
+        },
+        "username": {
+          "type": "string",
+          "description": "Screen name of the author."
+        },
+        "userBadge": {
+          "type": "string",
+          "description": "Type of badge, e.g., 'EUC' or 'Custom Build'."
+        },
+        "content": {
+          "type": "string",
+          "description": "The post body content."
+        },
+        "likes": {
+          "type": "integer",
+          "description": "Number of likes."
+        },
+        "flagged": {
+          "type": "boolean",
+          "description": "Whether the post is flagged for moderator review."
+        },
+        "reportsCount": {
+          "type": "integer",
+          "description": "Number of times this post has been reported."
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Formatted date or timestamp of creation."
+        }
+      },
+      "required": ["id", "username", "userBadge", "content"]
+    },
+    "BoardPostReply": {
+      "title": "BoardPostReply",
+      "description": "A response or reply to a board post.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the reply."
+        },
+        "username": {
+          "type": "string",
+          "description": "Screen name of the replier."
+        },
+        "content": {
+          "type": "string",
+          "description": "The message body of the reply."
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Formatted date or timestamp."
+        }
+      },
+      "required": ["id", "username", "content"]
+    },
+    "RadarBeacon": {
+      "title": "RadarBeacon",
+      "description": "Live GPS beacon or position tracker for riders.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "The unique user ID representing the owner of this beacon."
+        },
+        "lat": {
+          "type": "number",
+          "description": "Current latitude position."
+        },
+        "lng": {
+          "type": "number",
+          "description": "Current longitude position."
+        },
+        "name": {
+          "type": "string",
+          "description": "Rider's display name."
+        },
+        "pevType": {
+          "type": "string",
+          "description": "Rider's electric vehicle type."
+        }
+      },
+      "required": ["uid", "lat", "lng", "name"]
+    },
+    "TimestampedCoordinate": {
+      "title": "TimestampedCoordinate",
+      "description": "A geolocated point with a high-precision timestamp.",
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lng": {
+          "type": "number"
+        },
+        "timestamp": {
+          "type": "integer"
+        }
+      },
+      "required": ["lat", "lng", "timestamp"]
+    },
+    "RideSession": {
+      "title": "RideSession",
+      "description": "A logged ride session with telemetry data.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "integer"
+        },
+        "maxSpeed": {
+          "type": "number"
+        },
+        "avgSpeed": {
+          "type": "number"
+        },
+        "distance": {
+          "type": "number"
+        },
+        "pevType": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/entities/TimestampedCoordinate"
+          }
+        }
+      },
+      "required": ["id", "date", "duration", "maxSpeed", "avgSpeed", "distance", "pevType"]
+    }
+  },
+  "firestore": {
+    "/profiles/{profileId}": {
+      "schema": "UserProfile",
+      "description": "User profile collection."
+    },
+    "/radar/{beaconId}": {
+      "schema": "RadarBeacon",
+      "description": "Live GPS beacon entries for active riders."
+    },
+    "/forum_posts/{postId}": {
+      "schema": "ForumPost",
+      "description": "Public community discussion posts."
+    },
+    "/forum_posts/{postId}/replies/{replyId}": {
+      "schema": "ForumReply",
+      "description": "Replies nested under individual forum posts."
+    },
+    "/meetups/{meetupId}": {
+      "schema": "Meetup",
+      "description": "Global or group ride meetup points."
+    },
+    "/pings/{pingId}": {
+      "schema": "Ping",
+      "description": "Geolocated pings and hazard warnings."
+    },
+    "/board_posts/{postId}": {
+      "schema": "BoardPost",
+      "description": "High-contrast board posts."
+    },
+    "/board_posts/{postId}/replies/{replyId}": {
+      "schema": "BoardPostReply",
+      "description": "Replies to board posts."
+    },
+    "/ride_logs/{rideId}": {
+      "schema": "RideSession",
+      "description": "Saved ride log sessions containing GPS coordinates and telemetry."
+    }
+  }
+}

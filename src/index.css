@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Deep Zinc Backgrounds for the HUD */
+  --color-zinc-950: #0D0F12;
+  --color-zinc-900: #121519;
+  --color-zinc-800: #1A1F26;
+  --color-zinc-700: #2C3540;
+  
+  /* 
+     NOTE: I removed the flat hex overrides for Cyan, Emerald, and Blue.
+     We must allow Tailwind's native color spectrum to breathe so that 
+     your React UI engine can generate the correct gradients and glowing 
+     drop-shadows across all your theme presets (Lime, Amber, Rose, etc.). 
+  */
+}
+
+body {
+  background-color: #0D0F12;
+  color: #ECEFF1;
+  /* Removed !important tags so your React components can properly override text colors for warnings/status updates */
+}
+
+/* Custom scrollbar adjustments for premium black dashboard aesthetics */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090a0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}

@@ -1,0 +1,73 @@
+{
+  "hash": "2d7629ed",
+  "configHash": "14d2f35f",
+  "lockfileHash": "9cb8086c",
+  "browserHash": "5b859eec",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "92b0dbb6",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "a24ce8e0",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "f3abac3e",
+      "needsInterop": true
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "62a77baa",
+      "needsInterop": false
+    },
+    "motion/react": {
+      "src": "../../node_modules/motion/dist/es/react.mjs",
+      "file": "motion_react.js",
+      "fileHash": "76ca8d3c",
+      "needsInterop": false
+    },
+    "firebase/app": {
+      "src": "../../node_modules/firebase/app/dist/esm/index.esm.js",
+      "file": "firebase_app.js",
+      "fileHash": "ff125d5e",
+      "needsInterop": false
+    },
+    "firebase/auth": {
+      "src": "../../node_modules/firebase/auth/dist/esm/index.esm.js",
+      "file": "firebase_auth.js",
+      "fileHash": "58214560",
+      "needsInterop": false
+    },
+    "firebase/firestore": {
+      "src": "../../node_modules/firebase/firestore/dist/esm/index.esm.js",
+      "file": "firebase_firestore.js",
+      "fileHash": "b4cf18b2",
+      "needsInterop": false
+    },
+    "leaflet": {
+      "src": "../../node_modules/leaflet/dist/leaflet-src.js",
+      "file": "leaflet.js",
+      "fileHash": "ef0c8d9d",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-6BYGXUHW": {
+      "file": "chunk-6BYGXUHW.js"
+    },
+    "chunk-MAWY4DUB": {
+      "file": "chunk-MAWY4DUB.js"
+    },
+    "chunk-2TUXWMP5": {
+      "file": "chunk-2TUXWMP5.js"
+    }
+  }
+}
