@@ -3,7 +3,7 @@
   <!-- 🖼️ DRAG AND DROP YOUR MAIN RURAL ERIDES CHANNEL LOGO DIRECTLY BELOW THIS LINE -->
   <img src="YOUR_LOGO_URL_HERE" alt="Rural ERides Logo" width="250"/>
 
-  # ⚡️ Rural ERides Go (Alpha v6.5.0)
+  # ⚡️ Rural ERides Go (Stable V7.4.0)
 
   ![Status: Alpha V6.5](https://img.shields.io/badge/STATUS-ALPHA_V6.5-brightgreen?style=for-the-badge)
   ![Platform: Android / Capacitor](https://img.shields.io/badge/PLATFORM-ANDROID_/_CAPACITOR-brightgreen?style=for-the-badge)
