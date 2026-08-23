@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Deep Zinc Backgrounds for the HUD */
+  --color-zinc-950: #0D0F12;
+  --color-zinc-900: #121519;
+  --color-zinc-800: #1A1F26;
+  --color-zinc-700: #2C3540;
+}
+
+body {
+  background-color: #0D0F12;
+  color: #ECEFF1;
+  /* Dynamically shifts the view space up by the exact height of the mobile keyboard */
+  padding-bottom: var(--keyboard-height, 0px);
+  transition: padding-bottom 0.15s ease-out;
+}
+
+/* ===================================================================== */
+/* 🔥 CUSTOM SCROLLBARS FOR AVIONICS PANELS 🔥                           */
+/* ===================================================================== */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090a0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Explicit class mapping for the React containers */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 10px;
+}
+
+/* ===================================================================== */
+/* 🔥 HARDWARE UI ANIMATIONS 🔥                                          */
+/* ===================================================================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
