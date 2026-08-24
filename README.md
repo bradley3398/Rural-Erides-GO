@@ -1,9 +1,9 @@
 <div align="center">
   <img width="1024" height="1024" alt="logo1" src="https://github.com/user-attachments/assets/3634215b-71a6-42fd-83c5-a59474abdd69" />
 
-  # ⚡️ Rural ERides Go (Stable V7.4.0 Ultimate Avionics Core)
+  # ⚡️ Rural ERides Go (Stable V7.8.0 Ultimate Avionics Core)
 
-  ![Status: Stable V7.4.0](https://img.shields.io/badge/STATUS-STABLE_V7.4.0-brightgreen?style=for-the-badge)
+  ![Status: Stable V7.4.0](https://img.shields.io/badge/STATUS-STABLE_V7.8.0-brightgreen?style=for-the-badge)
   ![Platform: Android / Capacitor](https://img.shields.io/badge/PLATFORM-ANDROID_/_CAPACITOR-brightgreen?style=for-the-badge)
   ![Creator: Lord Bradley Callison](https://img.shields.io/badge/CREATOR-LORD_BRADLEY_CALLISON-blue?style=for-the-badge)
   ![Subscribers: 150+ Milestone](https://img.shields.io/badge/YOUTUBE-150_SUBS-red?style=for-the-badge&logo=youtube)
@@ -50,9 +50,9 @@ All telemetry logic, GPS tracking algorithms, and UI layouts are rigorously tune
 
 ---
 
-## ✨ Core App Features (v7.4.0)
+## ✨ Core App Features (v7.8.0)
 
-Version 7.4.0 transforms the software into a full-scale PEV operating system:
+Version 7.8.0 transforms the software into a full-scale PEV operating system:
 
 * **Live GPS Breadcrumb Routing:** The telemetry engine secretly drops GPS waypoints every 0.05 miles. Broadcasting a run to the Community Board automatically generates an interactive, multi-waypoint Google Maps route of your exact path.
 * **Predictive Maintenance Physics Engine:** The diagnostic dashboard tracks Tire Tread Life, Brake Pad Wear, and Drivetrain/Hub integrity based on your lifetime telemetry mileage[cite: 10].
